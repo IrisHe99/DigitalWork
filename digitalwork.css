@@ -1,10 +1,8 @@
 body {
     font-family: Tahoma, sans-serif;
-    text-stroke:2px rgb(24, 24, 24);
-    -webkit-text-stroke:1px rgb(80, 80, 80);
     text-align: center;
-    background-color: #1B2248;
-    background-image: url('image/night.jpg');
+    background-color: #f1bd8d;
+    background-image: url('image/cat.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,12 +44,38 @@ footer {
     color: white; 
     text-align: center;
     padding: 10px;
-    text-stroke:1px rgb(188, 188, 188);
-    -webkit-text-stroke:1px rgb(186, 186, 186);
-    
 }
 
 footer p {
     font-size: 12px;
     margin: 2px 0;
+}
+
+.poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.poster-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.poster-item {
+    flex: 0 0 48%;
+    text-align: center;
+}
+
+.poster-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.poster-item p {
+    margin-top: 10px;
+    font-size: 14px;
 }
